@@ -76,7 +76,7 @@
                 <p align="center">
                   <name>Kuldeep Purohit</name>
                   
-                </p><p align="">I am a PhD student at <a href="http://www.ee.iitm.ac.in/ipcvlab/">Image Processing and Computer Vision Lab</a>, IIT Madras. I received my Bachelors Degree in Electrical Engineering from . <a href="http://www.iitmandi.ac.in/">Indian Institute of Technology Mandi, Himachal Pradesh</a>.
+                </p><p align="">I am a PhD student at <a href="http://www.ee.iitm.ac.in/ipcvlab/">Image Processing and Computer Vision Lab</a>, IIT Madras. I received my Bachelors Degree in Electrical Engineering from . <a href="http://www.iitmandi.ac.in/">Indian Institute of Technology Mandi, Himachal Pradesh</a> .
 </br>
 		  </br>
 	<!--	      Before that, I was a postdoctoral research fellow in <a href="http://disi.unitn.it/~mhug/index.html">Deep Relational Learning</a> group at the University of Trento with Professor <a href="http://disi.unitn.it/~sebe/">Nicu Sebe</a> and a visiting researcher in the CS department at the <a href="https://www.cs.washington.edu/">University of Washington</a> working with <a href="http://homes.cs.washington.edu/~ali/">Ali Farhadi</a>.
@@ -160,12 +160,36 @@ I received my Master Degree on Artificial Intelligence from Tehran Polytechnic a
 	              </td><td width="75%" valign="top">
 	        <!--        <p><a href="https://arxiv.org/abs/1605.07651"> -->
 	<papertitle>Bringing Alive Blurred Moments</papertitle></a><br><strong>Kuldeep Purohit</strong>*,Anshul B. Shah and A.N. Rajagopalan<br>
-                   <em> arxiv.org/abs/1804.02913, 2018 &nbsp; <br>
-                 <a href="https://arxiv.org/abs/1804.02913.pdf">PDF</a>
+                 <a href="https://arxiv.org/abs/1804.02913.pdf">ArXiv Pre-print</a>
 	 <!-- 	  <a href="https://github.com/moinnabi/SelfPacedDeepLearning">code</a> /
                   <a href="http://dblp.uni-trier.de/rec/bib2/journals/corr/SanginetoNCS16.bib">bibtex</a> -->
                 </p><p></p>
-                <p>We built a deep architecture to extract a temporally consistent video from a single motion blurred image. The work is first of its kind as the traditional algorithms extract only a single deblurred image. The model uses a recurrent network built using ConvLSTM cells. Accepted at the IEEE International Conference on Computer Vision and Pattern Recognition 2019.
+                <p>Designed a deep convolutional architecture to extract a sharp video from a motion blurred image. The first stage involves unsupervised training of a novel spatio-temporal network for motion extraction from short video sequences. The above network is utilized for guided training of a CNN which extracts the same motion embedding from a single blurred image. The above networks are finally linked with our efficient deblurring network to generate the sharp video. Our framework delivers state-of-the-art accuracy in single image deblurring and video extraction, while being faster and more compact. <strong> Accepted at the IEEE International Conference on Computer Vision and Pattern Recognition (CVPR) 2019</strong>.
+</br></br> 
+<!-- <small>*Authors contributed equally</small>-->
+
+		</p><p></p>
+                <p></p>
+              </td>
+            </tr>
+
+
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+		<tbody>
+		   <tr>
+
+
+<!--Next paper should be listed in bottom -->
+	              <td width="25%"><img src="./img/movie_small.gif" alt="PontTuset" width="200" style="border-style: none">
+	              </td><td width="75%" valign="top">
+	        <!--        <p><a href="https://arxiv.org/abs/1605.07651"> -->
+	<papertitle>Mixed-Dense Connection Networks for Image and Video Super-Resolution</papertitle></a><br><strong>Kuldeep Purohit</strong>*,Anshul B. Shah and A.N. Rajagopalan<br>
+          <!--       <a href="https://arxiv.org/abs/1804.02913.pdf">ArXiv Pre-print</a>
+	  	  <a href="https://github.com/moinnabi/SelfPacedDeepLearning">code</a> /
+                  <a href="http://dblp.uni-trier.de/rec/bib2/journals/corr/SanginetoNCS16.bib">bibtex</a> -->
+                </p><p></p>
+                <p>Proposed a deep architecture for image and video super-resolution, which is built using efficient convolutional units we refer to as mixed-dense connection blocks, whose design combines the strengths of both residual and dense connection strategies, while overcoming their limitations. We enable efficient super-resolution for higher scale-factors through our scale-recurrent framework which reutilizes the filters learnt for lower scale factors recursively for higher factors. We analyze the effects of loss configurations and demonstrate their utility in enhancing complementary image qualities. The proposed networks lead to state-of-the-art results on image and video super-resolution benchmarks. <strong> Accepted at Neurocomputing (Special Issue on Deep Learning for Image Super-Resolution) 2019</strong>.
 </br></br> 
 <!-- <small>*Authors contributed equally</small>-->
 
@@ -180,12 +204,13 @@ I received my Master Degree on Artificial Intelligence from Tehran Polytechnic a
 	   <!--              <p><a href="https://arxiv.org/abs/1610.00307"> -->
 	<papertitle>Learning based Blur Detection and Segmentation</papertitle></a><br>
 		 <strong>Kuldeep Purohit</strong>,Anshul B. Shah and A.N. Rajagopalan<br>
-                  <em>Submitted to ICIP 2018 </em>* <br>
+                  <em>ICIP 2018 </em>* <br>
+                  <a href="https://ieeexplore.ieee.org/document/8451765">Paper Link</a> /
         <!--           <em>arXiv:1610.00307</em>, 2016 &nbsp; <br>
                   <a href="https://arxiv.org/pdf/1610.00307v1.pdf">PDF</a> /
                   <a href="#">bibtex</a> -->
                 </p><p></p>
-                <p>We present a robust approach for blur detection which allows learning and integrating the locally estimated blur probabilities with globally estimated blur map for a single image. THis is performed by training a classifier CNN model on patches and a fully convolutional regression model on images. The proposed method is validated on challenging blur detection datasets and the performs favourably against the state-of-the-arts. The aggregate blur detection map is then refined using MRF to perform binary segmentation. We also show its applications in blur magnification and matting.
+                <p>We present a robust two-level architecture for blur-based segmentation of a single image. First network is a fully convolutional encoder-decoder for estimating a semantically meaningful blur map from the full-resolution blurred image. Second network is a CNN-based classifier for obtaining local (patch-level) blur-probabilities. Fusion of the two network outputs enables accurate blur-segmentation using Graph-cut optimization over the obtained probabilities. We also show its applications in blur magnification and matting.
                 </p><p></p>
                 <p></p>
               </td>
@@ -196,13 +221,20 @@ I received my Master Degree on Artificial Intelligence from Tehran Polytechnic a
 	              <td width="25%"><img src="./img/UW_Dehazing.png" alt="PontTuset" width="200" style="border-style: none">
 	              </td><td width="75%" valign="top">
 	                <p><a href="#">
-	<papertitle>Multi-level Sharpening for Underwater Image Dehazing</papertitle></a><br><strong>Kuldeep Purohit</strong>,Srimanta Mandal and A.N. Rajagopalan<br>
-                  <em>Submitted to ICIP 2018 </em>* <br>
+	<papertitle>Multi-level Weighted Enhancment for Underwater Image Dehazing</papertitle></a><br><strong>Kuldeep Purohit</strong>,Srimanta Mandal and A.N. Rajagopalan<br>
+                  <em>Under Review at Journal of the Optical Society of America A (JOSA-A) </em>* <br>
         <!--          <a href="./files/UW2014_TR.pdf">PDF</a> /
                   <a href="./files/UW2014_slides.pdf">slide</a> /
                   <a href="#">code</a> -->
                 </p><p></p>
-                <p>We present a novel technique for dehazing of underwater images. Instead of utilizing a haze formation model (which is a highly ill-posed task for UW images), we perform dehazing by multi-level detail enhancement. THe approach is based upon WLS based edge-preserving decomposition, which progressively extracts coarse to fine level information of the scene. The approach performs at par with state-of-the-art methods, both qualitatively and quantitatively.
+                <p>Attenuation and scattering of light are responsible for haziness in images of underwater
+scenes. We propose an approach to reduce this effect, based on the underlying principle is that enhancement at different
+levels of detail can undo the degradation caused by underwater haze. The depth information is
+captured implicitly while going through different levels of details due to depth-variant nature of
+haze. Hence, we judiciously assign weights to different levels of image details and reveal that
+their linear combination along with the coarsest information can successfully restore the image.
+Results demonstrate the efficacy of our approach as compared to state-of-the-art underwater
+dehazing methods. 
 </br></br>
 <!-- <small>*This work was done while I was at UW.</small> -->
                 </p><p></p>
@@ -220,11 +252,7 @@ I received my Master Degree on Artificial Intelligence from Tehran Polytechnic a
            <!--       <a href="./files/UW2014_slides.pdf">slide</a> /
                   <a href="#">code</a>  -->
                 </p><p></p>
-                <p>This work specifically deals with the problem of mosaicing deep UW images captured by Remotely Operated Ve-
-hicles (ROVs).  These images are mainly degraded by haze, color changes, and non-uniform illumination.  We propose a
-framework  that  restores  these  images  in  accordance  with a  suitably  derived  degradation  model.   Furthermore,  our
-scheme harnesses the scene geometry information present in each image to aid in constructing a mosaic that is free from
-artifacts such as local blurring, ghosting, double contouring and visible seams.
+                <p>This work deals with the problem of mosaicing deep underwater images (captured by Remotely Operated Vehicles), which suffer from haze, color-cast, and non-uniform illumination. We propose a framework that restores these images in accordance with a suitably derived degradation model. Furthermore, our scheme harnesses the scene-depth information present in the haze for non-rigid registration of the images before blending to construct a mosaic that is free from artifacts such as local blurring, ghosting, and visible seams.
 </br></br>
 <!-- <small>*This work was done while I was at UW.</small> -->
                 </p><p></p>
@@ -238,11 +266,12 @@ artifacts such as local blurring, ghosting, double contouring and visible seams.
 	                <p><a href="#">
 	<papertitle>Splicing Localization in Motion Blurred 3D scenes</papertitle></a><br><strong>Kuldeep Purohit</strong> and A.N. Rajagopalan<br>
                   <em>ICIP 2016</em>*, &nbsp; <br>
+                  <a href="https://ieeexplore.ieee.org/abstract/document/7533095">Paper Link</a> /				
      <!--             <a href="./files/UW2014_TR.pdf">PDF</a> /
                   <a href="./files/UW2014_slides.pdf">slide</a> /
                   <a href="#">code</a> -->
                 </p><p></p>
-                <p> This work proposes an efficient algorithm for depth based segmentation of blurred images. The segmentation is then further utilized to estimate global camera motion from a single blurred image of a 3D scene. Finally, local blur profiles are compared with the global motion model to highlight inconsistencies and detect spliced regions. 
+                <p> This work proposes an efficient algorithm for depth based segmentation using spatially-distributed blur-kernels present in a single motion-blurred image of a 3D scene. The segmentation is then further utilized to estimate global camera motion from a single blurred image of a 3D scene. Finally, local blur profiles are compared with the global motion model to highlight inconsistencies and detect spliced regions. 
 </br></br>
 <!-- <small>*This work was done while I was at UW.</small> -->
                 </p><p></p>
